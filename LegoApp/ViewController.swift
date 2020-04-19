@@ -10,12 +10,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func startButtonPressed(_ sender: UIButton) {
-        let urlString = "http://192.168.4.1:5000/high"
+    @IBAction func upButtonPressed(_ sender: UIButton) {
+        let urlString = "http://192.168.4.1:5000/up"
         connectToRaspi(with: urlString)
     }
     @IBAction func stopButtonPressed(_ sender: UIButton) {
-        let urlString = "http://192.168.4.1:5000/low"
+        let urlString = "http://192.168.4.1:5000/"
+        connectToRaspi(with: urlString)
+    }
+    @IBAction func downButtonPressed(_ sender: UIButton) {
+        let urlString = "http://192.168.4.1:5000/down"
         connectToRaspi(with: urlString)
     }
 
