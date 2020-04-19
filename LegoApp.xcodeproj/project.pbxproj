@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E622841244CDEC700C816CF /* RaspiService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E622840244CDEC700C816CF /* RaspiService.swift */; };
 		2EA25210244C5C910095E6D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA2520F244C5C910095E6D5 /* AppDelegate.swift */; };
 		2EA25212244C5C910095E6D5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA25211244C5C910095E6D5 /* SceneDelegate.swift */; };
 		2EA25214244C5C910095E6D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2EA25213244C5C910095E6D5 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2E622840244CDEC700C816CF /* RaspiService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaspiService.swift; sourceTree = "<group>"; };
 		2EA2520C244C5C910095E6D5 /* LegoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LegoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2EA2520F244C5C910095E6D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2EA25211244C5C910095E6D5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				2EA25218244C5C950095E6D5 /* Assets.xcassets */,
 				2EA2521A244C5C950095E6D5 /* LaunchScreen.storyboard */,
 				2EA2521D244C5C950095E6D5 /* Info.plist */,
+				2E622840244CDEC700C816CF /* RaspiService.swift */,
 			);
 			path = LegoApp;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2EA25214244C5C910095E6D5 /* ViewController.swift in Sources */,
+				2E622841244CDEC700C816CF /* RaspiService.swift in Sources */,
 				2EA25210244C5C910095E6D5 /* AppDelegate.swift in Sources */,
 				2EA25212244C5C910095E6D5 /* SceneDelegate.swift in Sources */,
 			);

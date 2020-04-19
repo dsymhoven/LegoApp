@@ -9,36 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
+    private let raspiService = RaspiService()
 
     @IBAction func upButtonPressed(_ sender: UIButton) {
-        let urlString = "http://192.168.4.1:5000/up"
-        connectToRaspi(with: urlString)
+        raspiService.send(command: .up)
     }
     @IBAction func stopButtonPressed(_ sender: UIButton) {
-        let urlString = "http://192.168.4.1:5000/"
-        connectToRaspi(with: urlString)
+        raspiService.send(command: .stop)
     }
     @IBAction func downButtonPressed(_ sender: UIButton) {
-        let urlString = "http://192.168.4.1:5000/down"
-        connectToRaspi(with: urlString)
-    }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
-
-    private func connectToRaspi(with urlString: String) {
-        guard let url = URL(string: urlString) else {
-            return
-        }
-        URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let data = data {
-                print("received data: \(data)")
-                let dataString = String(data: data, encoding: .utf8)
-                print(dataString)
-            }
-        }
-        .resume()
+        raspiService.send(command: .down)
     }
 }
 
