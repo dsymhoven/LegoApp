@@ -15,44 +15,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lego App" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFI-Yf-nit">
-                                <rect key="frame" x="170" y="156" width="74" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyF-tO-xZy">
-                                <rect key="frame" x="192" y="240" width="30" height="30"/>
-                                <state key="normal" title="Up"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UyF-tO-xZy">
+                                <rect key="frame" x="37" y="703" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="56" id="5A3-7d-dcH"/>
+                                    <constraint firstAttribute="height" constant="56" id="L2s-d5-8s8"/>
+                                </constraints>
+                                <state key="normal" title="Up" image="up"/>
                                 <connections>
                                     <action selector="upButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sbj-4U-4NU"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxc-qo-PMS">
-                                <rect key="frame" x="191" y="301" width="32" height="30"/>
-                                <state key="normal" title="Stop"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxc-qo-PMS">
+                                <rect key="frame" x="179" y="703" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="BsA-Ur-iMQ"/>
+                                    <constraint firstAttribute="width" constant="56" id="o6N-ET-SYa"/>
+                                </constraints>
+                                <state key="normal" title="Stop" image="no-entry"/>
                                 <connections>
                                     <action selector="stopButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="v8Q-WD-3jM"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0z3-PE-agA">
-                                <rect key="frame" x="188" y="360" width="39" height="30"/>
-                                <state key="normal" title="Down"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Kran" translatesAutoresizingMaskIntoConstraints="NO" id="hzC-F4-eOf">
+                                <rect key="frame" x="0.0" y="303" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="1pT-xd-TMD"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VY-3m-Hcf">
+                                <rect key="frame" x="321" y="703" width="56" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="lNw-rh-VEd"/>
+                                    <constraint firstAttribute="width" constant="56" id="xy5-aN-47Q"/>
+                                </constraints>
+                                <state key="normal" title="Up" image="down"/>
                                 <connections>
-                                    <action selector="downButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bUq-TF-dgM"/>
+                                    <action selector="downButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Rum-Ir-59Z"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="UyF-tO-xZy" firstAttribute="top" secondItem="IFI-Yf-nit" secondAttribute="bottom" constant="63" id="7Vd-08-KzU"/>
-                            <constraint firstItem="hxc-qo-PMS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Eh9-iY-E7b"/>
-                            <constraint firstItem="UyF-tO-xZy" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="R6p-NL-wxT"/>
-                            <constraint firstItem="hxc-qo-PMS" firstAttribute="top" secondItem="UyF-tO-xZy" secondAttribute="bottom" constant="31" id="UcU-t2-PBF"/>
-                            <constraint firstItem="IFI-Yf-nit" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="112" id="ape-zC-z82"/>
-                            <constraint firstItem="0z3-PE-agA" firstAttribute="top" secondItem="hxc-qo-PMS" secondAttribute="bottom" constant="29" id="bHg-v4-wpg"/>
-                            <constraint firstItem="0z3-PE-agA" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="jqH-jJ-5SZ"/>
-                            <constraint firstItem="IFI-Yf-nit" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uun-O4-QPZ"/>
+                            <constraint firstItem="UyF-tO-xZy" firstAttribute="top" secondItem="hxc-qo-PMS" secondAttribute="top" id="81B-AV-PvR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hzC-F4-eOf" secondAttribute="trailing" id="AeN-ca-7BI"/>
+                            <constraint firstItem="hzC-F4-eOf" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="D1P-Eg-6NS"/>
+                            <constraint firstItem="6VY-3m-Hcf" firstAttribute="leading" secondItem="hxc-qo-PMS" secondAttribute="trailing" constant="86" id="Kqt-ZM-gAn"/>
+                            <constraint firstItem="hxc-qo-PMS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="NxH-cW-Kxc"/>
+                            <constraint firstItem="6VY-3m-Hcf" firstAttribute="top" secondItem="hxc-qo-PMS" secondAttribute="top" id="bJU-FM-GdQ"/>
+                            <constraint firstItem="hxc-qo-PMS" firstAttribute="top" secondItem="hzC-F4-eOf" secondAttribute="bottom" constant="100" id="ced-4Z-OHo"/>
+                            <constraint firstItem="hxc-qo-PMS" firstAttribute="leading" secondItem="UyF-tO-xZy" secondAttribute="trailing" constant="86" id="g3M-HW-0k1"/>
+                            <constraint firstItem="hzC-F4-eOf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="k3b-LZ-omY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -62,4 +75,10 @@
             <point key="canvasLocation" x="137.68115942028987" y="78.348214285714278"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Kran" width="1393" height="1058"/>
+        <image name="down" width="512" height="512"/>
+        <image name="no-entry" width="512" height="512"/>
+        <image name="up" width="512" height="512"/>
+    </resources>
 </document>
